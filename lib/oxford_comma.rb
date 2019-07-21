@@ -10,7 +10,7 @@ def oxford_comma(array)
   #   return array.map { | x | x.to_s }.join(" , ")
   if array.size == 1
     return array[0]
-  elsif array.length == 2
+  elsif array.size == 2
     return array.join( " and ")
   elsif array.length == 3
     return array.map { | x | x.to_s }.join(" , ")
