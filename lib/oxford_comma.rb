@@ -3,9 +3,8 @@ def oxford_comma(array)
     return array[0]
   elsif array.size == 2
     return array.join( " and ")
-  elsif array.size == 3
-    return array.map { | x | x.to_s }.join(" , ")
-  else array.length > 3
-    return array.map { | x | x.to_s }.join(" , ")
+  else array.length >= 3
+    # return array.map { | x | x.to_s }.join(" , ")
+    return array[0..-2].join( ", ") + ", and " + array[-1]
   end
 end
