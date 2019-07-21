@@ -7,4 +7,5 @@ def oxford_comma(array)
     return array.map { | x | x.to_s }.join(" , ")
   else array.length > 3
     return array.map { | x | x.to_s }.join(" , ")
+  end
 end
